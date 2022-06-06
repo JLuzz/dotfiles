@@ -172,13 +172,13 @@ custom_cursor_colors: true
 colors:
  # Default colors
   primary:
-    background: '0x292A2B'
-    foreground: '0xeaeaea'
+    background: '0x0a081f'
+    foreground: '0xa6c2eb'
  
  # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x000000'
-    cursor: '0xffffff'
+    text: '0x0a081f'
+    cursor: '0xa6c2eb'
  
  # Normal colors
   normal:

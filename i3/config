@@ -186,7 +186,7 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Background
-exec_always feh --bg-scale ~/Pictures/Wallpaper/retro-wave.jpg
+#exec_always feh --bg-scale ~/Pictures/Wallpaper/retro-wave.jpg
 
 # i3-gaps
 # You can also use any non-zero value if you'd like to have a border
@@ -206,3 +206,6 @@ focus_follows_mouse no
 
 # Notifications
 exec_always --no-startup-id dunst
+
+# Theming
+exec wal -R
