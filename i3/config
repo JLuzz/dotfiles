@@ -186,7 +186,7 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Background
-#exec_always feh --bg-scale ~/Pictures/Wallpaper/retro-wave.jpg
+exec_always feh --bg-scale ~/Pictures/Wallpaper/retro-wave.jpg
 
 # i3-gaps
 # You can also use any non-zero value if you'd like to have a border
@@ -196,7 +196,7 @@ gaps inner 20
 
 # i3-lock 
 exec_always --no-startup-id xss-lock --transfer-sleep-lock -- ~/scripts/lock.sh
-bindsym $mod+o exec ~/scripts/lock.sh
+bindsym $mod+o exec "~/scripts/lock.sh"
 
 # Picom
 exec picom --config ~/.config/picom/picom.conf --experimental-backends -b
@@ -208,4 +208,19 @@ focus_follows_mouse no
 exec_always --no-startup-id dunst
 
 # Theming
-exec wal -R
+# Set colors from Xresources
+# Change 'color7' and 'color2' to whatever colors you want i3 to use
+# from the generated scheme.
+# NOTE: The '#f0f0f0' in the lines below is the color i3 will use if
+# it fails to get colors from Xresources.
+set_from_resource $fg i3wm.color2 #f0f0f0
+set_from_resource $bg i3wm.color0 #f0f0f0
+
+# class                 border  backgr. text indicator child_border
+client.focused          $bg     $bg     $fg  $bg       $bg
+client.focused_inactive $bg     $bg     $fg  $bg       $bg
+client.unfocused        $bg     $bg     $fg  $bg       $bg
+client.urgent           $bg     $bg     $fg  $bg       $bg
+client.placeholder      $bg     $bg     $fg  $bg       $bg
+
+client.background       $bg
