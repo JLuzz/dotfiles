@@ -136,14 +136,45 @@ configuration {
 /*	me-select-entry: "MousePrimary";*/
 /*	me-accept-entry: "MouseDPrimary";*/
 /*	me-accept-custom: "Control+MouseDPrimary";*/
-  timeout {
-      action: "kb-cancel";
-      delay:  0;
-  }
-  filebrowser {
-      directories-first: true;
-      sorting-method:    "name";
-  }
+
+	spacing: 2;
+	timeout {
+	    action: "kb-cancel";
+	    delay:  0;
+	}
+	filebrowser {
+	    directories-first: true;
+	    sorting-method:    "name";
+	}
+	inputbar {
+	    children:   [ prompt,entry,case-indicator ];
+	}
+	window {
+	    border:     0;
+	    padding:    5;
+	}
+	message {
+	    border:     1px dash 0px 0px ;
+	    padding:    2px 0px 0px ;
+	}
+	listview {
+	    fixed-height: 0;
+	    border:       2px 0px 0px ;
+	    padding:      2px 0px 0px ;
+	}
+	element {
+	    border: 0;
+	}
+	mode-switcher {
+	    border: 1px dash 0px 0px ;
+	}
+	inputbar {
+	    spacing: 0;
+	    border: 0px;
+	}
+	textbox-prompt-colon {
+	    str:        " ";
+	}
 }
-@theme "~/.config/rofi/Pop-Dark.rasi"
-@theme "~/.cache/wal/colors-rofi-dark"
+
+@theme "~/.config/rofi/colors-rofi-dark"
