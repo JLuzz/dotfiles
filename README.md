@@ -4,7 +4,7 @@ Window Manager : [i3-gaps](https://github.com/Airblader/i3)
 
 Icons : [Candy Icons](https://github.com/EliverLara/candy-icons)
 
-Terminal : [Alacritty](https://alacritty.org
+Terminal : [Alacritty](https://alacritty.org)
 
 Display Manager : [ly](https://github.com/fairyglade/ly)
 
