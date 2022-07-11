@@ -1,3 +1,6 @@
+! Colors
+! ========
+
 ! DarkViolet + DarkGrey
 *color0:  #0a081f
 *color8:  #7487a4
@@ -22,3 +25,7 @@
 ! LightGrey
 *color7:  #a6c2eb
 *color15: #a6c2eb
+
+! Cursor
+! ========
+Xcursor.theme: Layan-cursors
