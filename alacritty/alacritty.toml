@@ -1,0 +1,38 @@
+custom_cursor_colors = true
+
+[colors.bright]
+black = "0x373b41"
+blue = "0x6FC1FF"
+cyan = "0x41fadf"
+green = "0x41fadf"
+magenta = "0xff9ecb"
+red = "0xff3334"
+white = "0xf8f8f8"
+yellow = "0xffcc95"
+
+[colors.cursor]
+cursor = "0xa6c2eb"
+text = "0x0a081f"
+
+[colors.normal]
+black = "0x3d3e40"
+blue = "0x45A9F9"
+cyan = "0x19f9d8"
+green = "0x19f9d8"
+magenta = "0xFF75B5"
+red = "0xFF2C6D"
+white = "0xf3f3f3"
+yellow = "0xFFB86C"
+
+[colors.primary]
+background = "0x0a081f"
+foreground = "0xa6c2eb"
+
+[window]
+decorations = "none"
+dynamic_title = true
+opacity = 0.8
+
+[window.padding]
+x = 10
+y = 10
